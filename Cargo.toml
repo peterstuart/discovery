@@ -10,6 +10,7 @@ members = [
   "src/15-led-compass",
   "src/16-punch-o-meter",
 ]
+exclude = ["test-size"]
 
 [profile.release]
 codegen-units = 1
