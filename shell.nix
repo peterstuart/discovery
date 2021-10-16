@@ -4,6 +4,7 @@ let
   pkgs = import <nixpkgs> { overlays = [ overlay ]; };
   rust-bin = pkgs.rust-bin.stable.latest.minimal.override {
     extensions = [ "clippy" "rustfmt" "llvm-tools-preview" ];
+    targets = [ "thumbv7em-none-eabihf" ];
   };
 
   # https://git.m-labs.hk/M-Labs/ENC424J600/commit/d399ebc3df7a5b61745a8eee86e9e68d1eb7ff9b
